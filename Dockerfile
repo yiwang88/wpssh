@@ -1,5 +1,7 @@
 FROM wordpress:latest
 
+COPY . /opt
+
 ENV SSH_PASSWD "root:Docker!"
 RUN apt-get update \
     && apt-get install -y --no-install-recommends openssh-server \
