@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 echo "Setup openrc ..." && openrc && touch /run/openrc/softlevel
 echo Starting ssh service...
 rc-service sshd start
