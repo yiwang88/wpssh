@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify, abort, make_response, url_for
 from flask_restful import Resource, Api, reqparse, fields, marshal
 
-import config
-import json
 
 app = Flask(__name__)
 api = Api(app)
