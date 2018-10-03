@@ -4,9 +4,7 @@ COPY . /opt
 
 ENV SSH_PASSWD "root:Docker!"
 RUN apk update \
-    && apk add dialog \
-    && apk update \
-    && apk add openssh-server \
+        && apk add openssh-server \
         vim \
         git \
         gcc \
