@@ -19,7 +19,7 @@ RUN apk update \
 
 COPY sshd_config /etc/ssh/
 
-RUN pip install flask flask_restful pyodbc
+RUN pip install flask flask_restful 
 
 EXPOSE 2222 8080
 
