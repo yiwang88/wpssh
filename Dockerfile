@@ -6,12 +6,7 @@ ENV SSH_PASSWD "root:Docker!"
 RUN apk update \
         && apk add openssh-server \
         vim \
-        git \
-        gcc \
-        g++ \
-        build-essential \
         curl \
-        gnupg \
     && echo "$SSH_PASSWD" | chpasswd \
     && chmod 755 /opt/init_container.sh
 
